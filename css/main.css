@@ -1,0 +1,251 @@
+/* GENERAL */
+
+* {
+    box-sizing: border-box;
+}
+
+body{
+    width: 90%;
+    margin: 0 auto;
+    font-size: large;
+}
+
+/* HEADER */
+
+header{
+    margin: 20px 0;
+    text-align: center;
+    padding: 20px 20px 5px;
+    background-color: #edf6f9;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+header h1{
+    font-size: 2rem;
+}
+
+header .nav-link{
+    margin: 5px;
+    color: black;
+    background-color: #80ffdb;
+}
+
+#donateBtn {
+    background-color: #ffe66d;
+    border: 1px solid black;
+}
+
+header .nav-link:hover,
+#donateBtn:hover {
+    background-color: #fca311;
+}
+
+.navbar-toggler{
+    margin: 0 auto;
+}
+
+/* Footer */
+footer{
+    background-color: #caf0f8;
+    padding: 3rem;
+}
+
+#footer-left{
+    text-align: right;
+}
+
+
+
+/* OTHERS */
+@media screen and (min-width: 1578px) {
+    .grid-item>img {
+        width: 336px;
+        height: 531px;
+        padding-top: 10%;
+    }
+
+}
+
+@media screen and (max-width: 1577px) {
+
+    .grid-item>img {
+        width: 336px;
+        height: 531px;
+        padding-top: 50%;
+    }
+
+    .left-panel {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 3;
+    }
+
+    .right-panel {
+        grid-column-start: 3;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        grid-row-end: 3;
+    }
+}
+
+@media screen and (max-width: 1116px) {
+    .left-panel {
+        grid-column-start: 2;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        grid-row-end: 3;
+        padding-top: 40%;
+        font-size: 2vw !important;
+    }
+
+
+    .right-panel {
+        grid-column-start: 2;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        grid-row-end: 3;
+        padding-top: 40%;
+        font-size: 2vw !important;
+    }
+}
+
+@media screen and (max-width: 1087px) {
+    .left-panel {
+        grid-column-start: 2;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        grid-row-end: 3;
+        padding-top: 40%;
+        font-size: 2.5vw !important;
+    }
+
+
+    .right-panel {
+        grid-column-start: 2;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        grid-row-end: 3;
+        padding-top: 40%;
+        font-size: 2.5vw !important;
+    }
+}
+
+@media screen and (max-width: 900px) {
+
+    .left-panel {
+        grid-column-start: 2;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        grid-row-end: 3;
+    }
+
+    .right-panel {
+        grid-column-start: 2;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        grid-row-end: 3;
+    }
+
+}
+
+@media screen and (max-width: 740px) {
+
+    .left-panel>img {
+        display: none;
+    }
+
+    .left-panel {
+        font-size: 3vw;
+    }
+
+    .right-panel>img {
+        display: none;
+    }
+
+    .right-panel {
+        font-size: 3vw;
+    }
+}
+
+#center {
+    margin-right: 0;
+}
+
+#right_side {
+    display: none;
+}
+
+#menu_bar {
+    width: 100%;
+    text-align: center;
+    background-color: white;
+}
+
+a:hover {
+    color: 0000C0 !important;
+}
+
+
+.grid-container {
+    /* width: 90%; */
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-gap: 2%;
+    /* padding-left: 10%;
+    padding-right: 10%; */
+}
+
+.left-panel {
+    position: relative;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    font-size: 1.7vw;
+}
+
+.right-panel {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    font-size: 1.7vw;
+}
+
+hr {
+    width: 84.5%;
+    margin: 0 auto;
+    background-color: rgba(112, 195, 206, 0.589);
+    border-color: rgba(112, 195, 206, 0.589);
+}
+
+section {
+    padding-top: 4%;
+    margin: 0 4rem;
+}
+
+.left-panel>a {
+    color: indigo !important;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#donation {
+    padding-bottom: 10%;
+}
+
+/* carrousel of images */
+.image-grid {
+    display: flex;
+    overflow-x: auto;
+    justify-content: center;
+    margin: 0 4rem;
+}
+
+.image-grid img {
+    margin: 0 2px;
+    height: 10rem;
+}
+
+
+
